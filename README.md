@@ -1,5 +1,5 @@
 # put_io_lab
-Na potrzeby Inżynierii Oprogramowania
+Na potrzeby Inżynierii Oprogramowania (I strongly believe)
 Jakub Mielczarek
 23.10.2025
 
