@@ -79,17 +79,79 @@ Osoba chcąca zakupić produkt na aukcji.
 ---
 
 <a id="uc2"></a>
-### UC2: ...
+### UC2: Złożenie oferty na produkt
 
-**Aktorzy:** [Sprzedający](#ac1), [Kupujący](#ac2), ...
+**Aktorzy:** [Kupujący](#ac2)
 
 **Scenariusz główny:**
-1. ...
+1. [Kupujący](#ac2) przegląda dostępne aukcje.
+2. [Kupujący](#ac2) wybiera aukcję i zgłasza chęc złożenia oferty.
+3. System prosi o podanie kwoty oferty.
+4. [Kupujący](#ac2) podaje kwotę oferty.
+5. System weryfikuje ofertę zgodnie z [BR1](#br1).
+6. System informuje o pomyślnym złożeniu oferty.
 
 **Scenariusze alternatywne:** 
 
-1.A. ...
-* 4.A.1. ...
+5.A. Oferta nie spełnia wymagań [BR1](#br1).
+* 5.A.1. System informuje o błędnej ofercie.
+* 5.A.2 Przejdź do kroku 3.
+
+---
+
+<a id="uc3"></a>
+### UC3: Opłacenie wygranej aukcji.
+
+**Aktorzy:** [Kupujący](#ac2)
+
+**Scenariusz główny:**
+1. System powiadamia [Kupującego](#ac2) o wygraniu aukcji.
+2. [Kupujący](#ac2) potwierdza chęć opłacenia aukcji.
+3. System prosi o dane płatności.
+4. [Kupujący](#ac2) podaje dane płatności.
+5. System przetwarza płatność.
+6. System informuje o pomyślnej płatności.
+
+**Scenariusze alternatywne:** 
+
+6.A. Płatność nie powiodła się.
+* 6.A.1. System informuje o błędzie płatności.
+* 6.A.2 Przejdź do kroku 3.
+
+---
+
+<a id="uc4"></a>
+### UC4: Potwierdzenie przekazania produktu
+
+**Aktorzy:** [Sprzedający](#ac1)
+
+**Scenariusz główny:**
+1. System powiadamia [Sprzedającego](#ac1) o dokonanej płatności przez [Kupującego](#ac2).
+2. [Sprzedający](#ac1) potwierdza przygotowanie produktu do dostawy.
+3. System prosi o podanie szczegółów dostawy.
+4. [Sprzedający](#ac1) podaje szczegóły dostawy.
+5. System rejestruje dostawę i informuje o niej [Kupującego](#ac2).
+
+**Scenariusze alternatywne:** 
+
+Brak szczenariuszy alternatywnych.
+
+---
+
+<a id="uc5"></a>
+### UC5: Przeglądanie wyników aukcji
+
+**Aktorzy:** [Kupujący](#ac2)
+
+**Scenariusz główny:**
+1. [Kupujący](#ac2) przegląda zakończone aukcje.
+2. System wyświetla wyniki aukcji.
+3. [Kupujący](#ac2) kończy przeglądanie wyników.
+
+
+**Scenariusze alternatywne:** 
+
+Brak scenariuszy alternatywnych.
 
 ---
 
