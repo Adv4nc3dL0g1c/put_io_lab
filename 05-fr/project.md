@@ -184,5 +184,11 @@ Aukcję wygrywa ten z [Kupujący](#ac2)ch, który w momencie jej zakończenia (u
 | Przypadek użycia                                  | Aukcja | Produkt | ... |
 | ------------------------------------------------- | ------ | ------- | --- |
 | UC1: Wystawienia produktu na aukcję               |    C   |    C    | ... |
-| ???                                               |  ...   |  ...    | ... |
+| UC2: Złożenie oferty na produkt                   |    R   |    R    | ... |
+| UC3: Opłacenie wygranej aukcji                    |    R   |    R    | ... |
+| UC4: Potwierdzenie przekazania produktu           |    U   |    R    | ... |
+| UC5: Przeglądanie wyników aukcji                  |    R   |    R    | ... |
+| UC6: Anulowanie aukcji                            |    D   |         | ... |
+| UC7: Przeglądanie listy aukcji                    |    L   |    L    | ... |
+| UC8: Rejestracja w systemie                       |        |         | ... |
 
