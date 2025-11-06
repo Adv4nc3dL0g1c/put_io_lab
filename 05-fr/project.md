@@ -16,18 +16,18 @@ Specyfikacja wymagań funkcjonalnych w ramach informatyzacji procesu sprzedaży 
 
 **Scenariusz główny:**
 1. [Sprzedający](#ac1) wystawia produkt na aukcję. ([UC1](#uc1))
-2. [Kupujący](#ac2) oferuje kwotę za produkt wyższą od aktualnie najwyższej oferty. ([BR1](#br1))
+2. [Kupujący](#ac2) oferuje kwotę za produkt wyższą od aktualnie najwyższej oferty. ([UC2](#uc2)) ([BR1](#br1))
 3. [Kupujący](#ac2) wygrywa aukcję ([BR2](#br2))
-4. [Kupujący](#ac2) przekazuje należność Sprzedającemu.
-5. [Sprzedający](#ac1) przekazuje produkt Kupującemu.
+4. [Kupujący](#ac2) przekazuje należność Sprzedającemu. ([UC3](#uc3))
+5. [Sprzedający](#ac1) przekazuje produkt Kupującemu. ([UC4](#uc4))
 
 **Scenariusze alternatywne:** 
 
 2.A. Oferta Kupującego została przebita, a [Kupujący](#ac2) pragnie przebić aktualnie najwyższą ofertę.
-* 2.A.1. Przejdź do kroku 2.
+* 2.A.1. Przejdź do kroku 2. ([UC2](#uc2))
 
 3.A. Czas aukcji upłynął i [Kupujący](#ac2) przegrał aukcję. ([BR2](#br2))
-* 3.A.1. Koniec przypadku użycia.
+* 3.A.1. Koniec przypadku użycia. ([UC5](#uc5))
 
 ---
 
@@ -50,10 +50,12 @@ Osoba chcąca zakupić produkt na aukcji.
 
 [Sprzedający](#ac1):
 * [UC1](#uc1): Wystawienie produktu na aukcję
-* ...
+* [UC4](#uc4): Potwierdzenie przekazania produktu
 
 [Kupujący](#ac2)
-* ...
+* [UC2](#uc2): Złożenie oferty na produkt
+* [UC3](#uc3): Opłacenie wygranej aukcji
+* [UC5](#uc5): Przeglądanie wyników aukcji
 
 ---
 <a id="uc1"></a>
