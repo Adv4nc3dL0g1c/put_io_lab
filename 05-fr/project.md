@@ -51,11 +51,16 @@ Osoba chcąca zakupić produkt na aukcji.
 [Sprzedający](#ac1):
 * [UC1](#uc1): Wystawienie produktu na aukcję
 * [UC4](#uc4): Potwierdzenie przekazania produktu
+* [UC6](#uc6): Anulowanie aukcji 
+* [UC8](#uc8): Rejestracja w systemie
 
 [Kupujący](#ac2)
 * [UC2](#uc2): Złożenie oferty na produkt
 * [UC3](#uc3): Opłacenie wygranej aukcji
 * [UC5](#uc5): Przeglądanie wyników aukcji
+* [UC7](#uc7): Przeglądanie listy aukcji
+* [UC8](#uc8): Rejestracja w systemie
+
 
 ---
 <a id="uc1"></a>
@@ -147,6 +152,51 @@ Brak szczenariuszy alternatywnych.
 1. [Kupujący](#ac2) przegląda zakończone aukcje.
 2. System wyświetla wyniki aukcji.
 3. [Kupujący](#ac2) kończy przeglądanie wyników.
+
+
+**Scenariusze alternatywne:** 
+
+Brak scenariuszy alternatywnych.
+
+---
+
+<a id="uc6"></a>
+### UC6: Anulowanie aukcji
+
+**Aktorzy:** [Sprzedający](#ac1)
+
+**Scenariusz główny:**
+ Brak scenariusza głównego.
+
+
+**Scenariusze alternatywne:** 
+
+Brak scenariuszy alternatywnych.
+
+---
+
+<a id="uc7"></a>
+### UC7: Przeglądanie listy aukcji
+
+**Aktorzy:** [Kupujący](#ac2)
+
+**Scenariusz główny:**
+Brak scenariusza głównego.
+
+
+**Scenariusze alternatywne:** 
+
+Brak scenariuszy alternatywnych.
+
+---
+
+<a id="uc8"></a>
+### UC8: Rejestracja w systemie
+
+**Aktorzy:** [Sprzedający](#ac1), [Kupujący](#ac2)
+
+**Scenariusz główny:**
+Brak scenariusza głównego.
 
 
 **Scenariusze alternatywne:** 
